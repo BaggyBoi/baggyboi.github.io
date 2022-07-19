@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    <link href="https://api.fontshare.com/css?f[]=satoshi@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8c37b4294b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">Rock Paper Scissors</div>
+    <div id="playersDiv">
+        <div class="player" id="computer">
+            <div class="scoreDisplay">
+                <p>Computer score: </p>
+                <p id="compScore">0</p>
+            </div>
+            <div id="computerDisplay" class="display"></div>
+        </div>
+        <div id="middleDiv">
+            <div id="gameDisplayer"></div>
+            <div id="selection">
+                <select id="select">
+                    <option value="unselected" disabled="disabled" selected="selected">Select One!</option>
+                    <option value="r">Rock</option>
+                    <option value="p">Paper</option>
+                    <option value="s">Scissors</option>
+                </select>
+                <button onclick="confirmSelection()">Confirm</button>
+            </div>
+            <div id="playAgainDiv"><button onclick="playAgain()">Play Again</button></div>
+        </div>
+        <div class="player" id="realPlayer">
+            <div class="scoreDisplay">
+                <p>Your score: </p>
+                <p id="plyrScore">0</p>
+            </div>
+            <div id="playerDisplay" class="display"></div>
+        </div>
+    </div>
+</body>
+
+</html>

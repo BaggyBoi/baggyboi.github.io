@@ -1,0 +1,126 @@
+body {
+    background-color: #1f1e1e;
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Satoshi", sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#playersDiv {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player {
+    text-align: center;
+}
+
+#middleDiv {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#selection {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+option {
+    color: white;
+}
+
+button {
+    width: 150px;
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #1f1e1e;
+    transition: .5s;
+}
+
+button:hover {
+    color: rgb(216, 216, 216);
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+select {
+    color: white;
+    background-color: #1f1e1e;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border: 1px solid #1f1e1e;
+}
+
+.display {
+    border: 1px solid white;
+    width: 300px;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140px;
+}
+
+#gameDisplayer {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreDisplay {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#playAgainDiv {
+    width: 400px;
+    height: 50px;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playAgainDiv button:hover {
+    color: rgb(216, 216, 216);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+@media only screen and(max-width: 500px) {
+    #playersDiv {
+        height: 1000px !important;
+        flex-direction: column;
+    }
+}
