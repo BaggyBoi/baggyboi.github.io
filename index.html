@@ -19,13 +19,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black fs-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fs-3" style="position: sticky; top: 0; z-index: 98;">
         <div class="container-fluid px-5">
             <a class="navbar-brand fs-3" href="#">My portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span><i class="bi bi-three-dots"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav navbar-margin-right">
@@ -43,6 +43,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#soc">Socials</a>
+                    </li>
+                    <li class="nav-item menu-opener-li">
+                        <a class="nav-link menu-opener">Menu for mobile</a>
                     </li>
                 </ul>
             </div>
@@ -140,7 +143,7 @@
             </div>
         </div>
         <div class="row d-flex justify-content-evenly mt-5">
-            <div class="card my-5 shadow p-3 bg-dark" id="portfolio" style="width: 25rem;">
+            <div class="card my-5 shadow p-3 bg-black" id="portfolio" style="width: 25rem;">
                 <img src="img/portfolio.png" class="card-img-top">
                 <div class="card-body">
                     <span class="badge rounded-pill bg-primary mb-3">Website</span>
@@ -149,7 +152,7 @@
                         kinda decent I guess?</p>
                 </div>
             </div>
-            <div class="card my-5 shadow p-3 bg-dark" id="rps" style="width: 25rem;">
+            <div class="card my-5 shadow p-3 bg-black" id="rps" style="width: 25rem;">
                 <img src="img/rps.png" class="card-img-top">
                 <div class="card-body">
                     <span class="badge rounded-pill bg-primary mb-3">Website</span>
@@ -158,7 +161,7 @@
                         though it is not responsive.</p>
                 </div>
             </div>
-            <div class="card my-5 shadow p-3 bg-dark" id="template" style="width: 25rem;">
+            <div class="card my-5 shadow p-3 bg-black" id="template" style="width: 25rem;">
                 <img src="img/template.png" class="card-img-top">
                 <div class="card-body">
                     <span class="badge rounded-pill bg-primary mb-3">Website</span>
@@ -221,8 +224,7 @@
     <div id="hint" class="col-xl-4 col-md-6 bg-dark text-light py-2 rounded-3 px-3">
         <h1 class="fw-bold">Psst!</h1>
         <h3>Hey you! Did you know that there was a menu for additional stuff? Try pressing <span
-                class="badge rounded-pill bg-secondary mb-3">CTRL+K</span>!...? Ah, you are using mobile? Welp, sorry
-            bud, menu for mobile isn't developed yet!</h3>
+                class="badge rounded-pill bg-secondary mb-3">CTRL+K</span>!<p class="for-mobile">...? Ah, you are using mobile? Fine, there is a button in the header.</p></h3>
     </div>
     <span id="background">
         <div id="menu" class=" container bg-dark col-6 text-light p-3">
