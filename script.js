@@ -44,11 +44,14 @@ function scrollCheck(e) {
     }
 }
 scrollCheck(e)
-if (e.matches) {
+let e2 = window.matchMedia("(max-width: 980px)")
+if (e2.matches) {
+    $("#paddingProblem").removeClass("ps-5")
     $(".menu-opener-li").css("display", "block")
     $(".for-mobile").css("display", "block")
 }
 else {
+    $("#paddingProblem").addClass("ps-5")
     $(".menu-opener-li").css("display", "none")
     $(".for-mobile").css("display", "none")
 }
