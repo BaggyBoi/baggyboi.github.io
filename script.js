@@ -76,7 +76,7 @@ $("#hint").click(function (e) {
     $(this).css("opacity", "0")
 });
 $(document).keyup(function (e) {
-    if (e.ctrlKey && e.key == 'k') {
+    if (e.altKey && e.key == 'k') {
         localStorage.setItem("isMenuOpened", true)
         $("#background").css("opacity", "1");
         $("#background").css("z-index", "99");
